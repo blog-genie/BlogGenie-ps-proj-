@@ -21,7 +21,7 @@ const BlogPost = require("./models/blogs");
  * Database Connection
  * Connects to MongoDB with error handling and logging
  */
-mongoose.connect("mongodb+srv://Arnav_Agarwal:Arnav2005@cluster0.no81p.mongodb.net/SampleDatabase1?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("YOUR MONGODB URI HERE")
     .then(() => console.log('✓ MongoDB connected successfully'))
     .catch(err => console.error('✗ MongoDB connection error:', err.message));
 console.log('MongoDB URI:', process.env.MONGO_URI);
